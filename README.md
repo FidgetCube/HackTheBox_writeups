@@ -7,7 +7,7 @@ Content coming soon!
 
 [^top](#top)
 ## Sherlocks
-+ [Malware Analysis - Lockpick (easy)](#https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/lockpick/readme.md)
++ [Malware Analysis - Lockpick (easy)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/lockpick/readme.md)
 + [](#)
 
 
