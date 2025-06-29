@@ -10,7 +10,7 @@
   + [Goals](#goals)
   + [Investigating the Ransomware Binary](#investigating-the-ransomware-binary)
   + [Reversing the Ransomware in with Ghidra](#reversing-the-ransomware-in-with-ghidra)
-  + [Building The Decryption Script](#bulding-the-encryption-script)
+  + [Building The Decryption Script](#building-the-encryption-script)
   + [Investigating Decrypted Files](#investigating-decrypted-files)
 </details>
 
