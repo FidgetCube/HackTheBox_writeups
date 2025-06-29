@@ -8,7 +8,9 @@
 + [Challenge Files](#challenge-files)
 + [Solution](#Solution)
   + [Goals](#goals)
+  + [Investigating the Ransomware Binary](#investigating-the-ransomware-binary)
   + [Reversing the Ransomware in with Ghidra](#reversing-the-ransomware-in-with-ghidra)
+  + [Building The Decryption Script](#bulding-the-encryption-script)
 </details>
 
 ## Challenge Description
@@ -40,6 +42,8 @@ Goals:
 + Decrypt the files using the identified encryption key
   + answer the rest of the questions requiring the decrypted files 
 
+[^top](#top)
+### Investigating the Ransomware Binary
 I started by downloading the challenge files and unzipping them. We are presented with a bunch of encrypted files located in a folder called `/forela-criticaldata`, with Forela being the name of the ficticious company in the challenge description. 
 
 ![image](https://github.com/user-attachments/assets/66326d47-ac7f-499e-af4f-56bf16abe094)
@@ -56,11 +60,15 @@ Worth noting is there are some intersting strings identified, including file ext
 
 ![image](https://github.com/user-attachments/assets/dd34016b-fff0-4359-add5-124d2ea43b4f)
 
+[^top](#top)
 ### Reversing the Ransomware in with Ghidra
-Loading up Ghidra and decompiling main we see a function called `process_directory` which takes 2 arguments, the second being the suspicious string identified earlier which looks like an encryption key. Lets follow the `process_directory` function 
+
+#### Main
+Loading up Ghidra and decompiling `main()` we see it call a function called `process_directory` which takes 2 arguments, the second being the suspicious string identified earlier which looks like an encryption key. Lets follow the `process_directory` function 
 
 ![image](https://github.com/user-attachments/assets/9b502bb7-181e-422c-8cc6-c3ba92e482cb)
 
+#### process_directory
 This function performs a series of checks and actions with the high level summary as follows;
 + It attempts to open the object passed in at argument 1 (`/forela-criticaldata/`), as a directory, and if that doesn't fail, it then steps into further checks
 + The function then compares objects (files) against a hardcoded list of filetypes, if the object matches the file type, it then it is passed to another function called `encrypt_file`
@@ -68,9 +76,22 @@ This function performs a series of checks and actions with the high level summar
 
 ![image](https://github.com/user-attachments/assets/0f47dddd-2fc0-4b30-9da2-345a7e9ab19e)
 
+#### encrypt_file
++ We can see that some variables are declared and initialised (snipped in the screenshot)
++ The file passed in at argument 1 is opened in `'rb'` (read/binary) mode, if this fails it prints an error message and quits
++ The contents of the file are read into memory (`local_38`) and the file length is calculated
++ Starting on line 28 is a for loop which is the actual encryption routine and looking at the calculations on line 31, a XOR stream cipher is used as the encryption algorithm
++ The XOR key (encryption key) is the string passed in as argument 2, which was identified in the strings using Detect-It-Easy and also hardcoded into the `main()` function (`bhUlIshutrea98liOp`)
++ The encrypted data is written to a new file with a `.24bes` file extension
++ Drops a ransom note providing a contact email address of `bes24@protonmail.com`
++ Deletes the original, unencrypted file
 
+![image](https://github.com/user-attachments/assets/17c25137-5656-4ab3-9186-1bdf400c280c)
 
+[^top](#top)
+### The Decryption Script
 
+Now that we have reversed the encryption routine, discovered that it's an XOR operation and uncovered the XOR key, time to build the decryption script in python.
 
 
 
