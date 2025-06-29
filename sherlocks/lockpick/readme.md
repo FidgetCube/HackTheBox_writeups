@@ -11,6 +11,7 @@
   + [Investigating the Ransomware Binary](#investigating-the-ransomware-binary)
   + [Reversing the Ransomware in with Ghidra](#reversing-the-ransomware-in-with-ghidra)
   + [Building The Decryption Script](#bulding-the-encryption-script)
+  + [Investigating Decrypted Files](#investigating-decrypted-files)
 </details>
 
 ## Challenge Description
@@ -93,6 +94,10 @@ This function performs a series of checks and actions with the high level summar
 
 Now that we have reversed the encryption routine, discovered that it's an XOR operation and uncovered the XOR key, time to build the decryption script in python.
 
+
+
+[^top](#top)
+### Investigating Decrypted Files
 
 First and Last name for "wbevansn1@cocolog-nifty.com"
 ```
