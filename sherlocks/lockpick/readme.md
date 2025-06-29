@@ -49,7 +49,10 @@ Loading up Ghidra and decompiling main we see a function called `process_directo
 
 ![image](https://github.com/user-attachments/assets/9b502bb7-181e-422c-8cc6-c3ba92e482cb)
 
-This function seems to carry the bulk of the work, as can been seen below, the function attempts to open the directory passed in as the first argument (`/forela-criticaldata/`). The function then searches for a 
+This function performs a series of checks and actions with the high level summary as follows;
++ It attempts to open the object passed in at argument 1 (`/forela-criticaldata/`), as a directory, and if that doesn't fail, it then steps into further checks
++ The function then compares objects (files) against a hardcoded list of filetypes, if the object matches the file type, it then it is passed to another function called `encrypt_file`
++ `encrypt_file` takes 2 arguments, a file is passed in as argument 1 and argument 2 contains the suspicious string (suspected encryption key) identified before  
 
 ![image](https://github.com/user-attachments/assets/0f47dddd-2fc0-4b30-9da2-345a7e9ab19e)
 
