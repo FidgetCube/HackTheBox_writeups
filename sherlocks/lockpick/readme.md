@@ -29,7 +29,21 @@ Once the Sherlock zip has been unzipped, you will find a DANGER.txt file. Please
 [^top](#top)
 ## Solution
 
+I started by downloading the challenge files and unzipping them. We are presented with a bunch of encrypted files located in a folder called `/forela-criticaldata`, with Forela being the name of the ficticious company in the challenge description. 
 
+![image](https://github.com/user-attachments/assets/66326d47-ac7f-499e-af4f-56bf16abe094)
+
+Next, read the file `DANGER.txt` for the password to unzip the actual ransomware so we can figure out how to reverse it and decrypt the files. A quick check of the unzipped ransomware binary info.
+
+![image](https://github.com/user-attachments/assets/cd916b96-c6ee-47a8-9595-41f66f7a4fb0)
+
+Load it up in Detect it Easy and see that it was compiled using GCC so i'll reverse it using Ghidra
+
+![image](https://github.com/user-attachments/assets/96ef7795-62bd-411c-a705-9896a2a56140)
+
+Worth noting is there are some intersting strings identified, including file extensions which we can assume the ransomware is searching for, and another string that looks suspiciously like an encryption key but i'll wait to confirm this in Ghidra
+
+![image](https://github.com/user-attachments/assets/dd34016b-fff0-4359-add5-124d2ea43b4f)
 
 
 
