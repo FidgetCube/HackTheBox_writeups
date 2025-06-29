@@ -155,7 +155,8 @@ def decrypt_file(encrypted_path, key):
 for filename in os.listdir("."):
     if filename.endswith(".24bes"):
         decrypt_file(filename, key)
-    print("[+] Decryption Completed")
+
+print("[+] Decryption Completed")
   ```
 
 Here you can see the routine executed successfully, decrypting filesand removing the encrypted versions
