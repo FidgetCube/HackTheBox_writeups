@@ -41,9 +41,22 @@ Load it up in Detect it Easy and see that it was compiled using GCC so i'll reve
 
 ![image](https://github.com/user-attachments/assets/96ef7795-62bd-411c-a705-9896a2a56140)
 
-Worth noting is there are some intersting strings identified, including file extensions which we can assume the ransomware is searching for, and another string that looks suspiciously like an encryption key but i'll wait to confirm this in Ghidra
+Worth noting is there are some intersting strings identified, including file extensions which we can assume the ransomware is searching for to encrypt, and another string that looks suspiciously like an encryption key but i'll wait to confirm this in Ghidra
 
 ![image](https://github.com/user-attachments/assets/dd34016b-fff0-4359-add5-124d2ea43b4f)
+
+Loading up Ghidra and decompiling main we see a function called `process_directory` which takes 2 arguments, the second being the suspicious string identified earlier which looks like an encryption key. Lets follow the `process_directory` function 
+
+![image](https://github.com/user-attachments/assets/9b502bb7-181e-422c-8cc6-c3ba92e482cb)
+
+This function seems to carry the bulk of the work, as can been seen below, the function attempts to open the directory passed in as the first argument (`/forela-criticaldata/`). The function then searches for a 
+
+![image](https://github.com/user-attachments/assets/0f47dddd-2fc0-4b30-9da2-345a7e9ab19e)
+
+
+
+
+
 
 
 
