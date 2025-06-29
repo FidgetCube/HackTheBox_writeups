@@ -73,7 +73,11 @@ Loading up Ghidra and decompiling `main()` we see it call a function called `pro
 This function performs a series of checks and actions with the high level summary as follows;
 + It attempts to open the object passed in at argument 1 (`/forela-criticaldata/`), as a directory, and if that doesn't fail, it then steps into further checks
 + The function then compares objects (files) against a hardcoded list of filetypes, if the object matches the file type, it then it is passed to another function called `encrypt_file`
-+ `encrypt_file` takes 2 arguments, a file is passed in as argument 1 and argument 2 contains the suspicious string (suspected encryption key) identified before  
++ `encrypt_file` takes 2 arguments, a file is passed in as argument 1 and argument 2 contains the suspicious string (suspected encryption key) identified before
+
+QUESTION 7:  
+Which of the following file extensions is not targeted by the malware? .txt, .sql,.ppt, .pdf, .docx, .xlsx, .csv, .json, .xml
+`.ppt`
 
 ![image](https://github.com/user-attachments/assets/0f47dddd-2fc0-4b30-9da2-345a7e9ab19e)
 
@@ -86,6 +90,14 @@ This function performs a series of checks and actions with the high level summar
 + The encrypted data is written to a new file with a `.24bes` file extension
 + Drops a ransom note providing a contact email address of `bes24@protonmail.com`
 + Deletes the original, unencrypted file
+
+QUESTION 1:  
+Please confirm the encryption key string utilised for the encryption of the files provided?
+`bhUlIshutrea98liOp`
+
+QUESTION 4:  
+What is the email address of the attacker?
+`bes24@protonmail.com`
 
 ![image](https://github.com/user-attachments/assets/17c25137-5656-4ab3-9186-1bdf400c280c)
 
@@ -146,6 +158,7 @@ for filename in os.listdir("."):
     print("[+] Decryption Completed")
   ```
 
+Here you can see the routine executed successfully, decrypting filesand removing the encrypted versions
 
 
 
@@ -154,23 +167,41 @@ for filename in os.listdir("."):
 [^top](#top)
 ### Investigating Decrypted Files
 
-First and Last name for "wbevansn1@cocolog-nifty.com"
+QUESTION 2:  
+We have recently recieved an email from wbevansn1@cocolog-nifty.com demanding to know the first and last name we have him registered as. They believe they made a mistake in the application process. Please confirm the first and last name of this applicant
 ```
 rg "wbevansn1@cocolog-nifty.com"
   ```
 ` Walden Bevans`
 
-
-MAC and Serial Number: 
+QUESTION 3:  
+What is the MAC address and serial number of the laptop assigned to Hart Manifould?
 ```
 grep -oP '.{0,260}Hart Manifould.{0,53}' it_assets.xml
   ```
 `E8-16-DF-E7-52-48, 1316262`
 
+QUESTION 5:  
+City of London Police have suspicions of some insider trading taking part within our trading organisation. Please confirm the email address of the person with the highest profit percentage in a single trade alongside the profit percentage (to 25 decimal places).
 
 
 
 
+QUESTION 6:  
+Our E-Discovery team would like to confirm the IP address detailed in the Sales Forecast log for a user who is suspected of sharing their account with a colleague. Please confirm the IP address for Karylin O'Hederscoll.
+
+
+QUESTION 8:  
+We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the applicants DB.
+`f3894af4f1ffa42b3a379dddba384405`
+
+QUESTION 9:  
+We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the trading backup.
+`87baa3a12068c471c3320b7f41235669`
+
+QUESTION 10:  
+We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the complaints file.
+`c3f05980d9bd945446f8a21bafdbf4e7`
 
 
 
