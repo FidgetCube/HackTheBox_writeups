@@ -161,8 +161,7 @@ print("[+] Decryption Completed")
 
 Here you can see the routine executed successfully, decrypting filesand removing the encrypted versions
 
-
-
+![image](https://github.com/user-attachments/assets/de371206-8928-405d-9be8-3b1f556b4787)
 
 
 [^top](#top)
