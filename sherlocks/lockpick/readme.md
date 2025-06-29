@@ -89,7 +89,7 @@ This function performs a series of checks and actions with the high level summar
 ![image](https://github.com/user-attachments/assets/17c25137-5656-4ab3-9186-1bdf400c280c)
 
 [^top](#top)
-### The Decryption Script
+### Building The Decryption Script
 
 Now that we have reversed the encryption routine, discovered that it's an XOR operation and uncovered the XOR key, time to build the decryption script in python.
 
