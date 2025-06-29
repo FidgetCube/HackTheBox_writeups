@@ -94,6 +94,21 @@ This function performs a series of checks and actions with the high level summar
 Now that we have reversed the encryption routine, discovered that it's an XOR operation and uncovered the XOR key, time to build the decryption script in python.
 
 
+First and Last name for "wbevansn1@cocolog-nifty.com"
+```
+rg "wbevansn1@cocolog-nifty.com"
+  ```
+` Walden Bevans`
+
+
+MAC and Serial Number: 
+```
+grep -oP '.{0,260}Hart Manifould.{0,53}' it_assets.xml
+  ```
+`E8-16-DF-E7-52-48, 1316262`
+
+
+
 
 
 
