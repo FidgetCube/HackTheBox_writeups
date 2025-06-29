@@ -96,54 +96,55 @@ Now that we have reversed the encryption routine, discovered that it's an XOR op
 
 Here is the script that i wrote:
 
-> # Decryption script for HTB Sherlock - LockPick
-> # XOR algorithm using key retrieved from reversing the ransomware binary
-> 
-> import os
-> 
-> # decryption key 
-> key = "bhUlIshutrea98liOp"
-> key_len = len(key)
-> 
-> def decrypt_file(encrypted_path, key):
->     # Ignore ransom notes
->     if encrypted_path.endswith("_note.txt"):
->         print(f"[-] Skipping ransom note: {encrypted_path}")
->         return
-> 
->     # Skip files that aren't encrypted
->     if not encrypted_path.endswith(".24bes"):
->         print(f"[-] Not a .24bes encrypted file: {encrypted_path}")
->         return
-> 
->     # Restore original filename by removing the ".24bes" extension
->     original_path = encrypted_path[:-6]
->     
->     try:
->         with open(encrypted_path, "rb") as f:
->             data = bytearray(f.read())
-> 
->         for i in range(len(data)):
->             data[i] ^= ord(key[i % key_len])
-> 
->         with open(original_path, "wb") as f:
->             f.write(data)
-> 
->         print(f"[+] Decrypted: {encrypted_path} → {original_path}")
-> 
->         # Delete encrypted files
->         os.remove(encrypted_path)
->         print(f"[+]        Removed: {encrypted_path}")
-> 
->     except Exception as e:
->         print(f"[!] Error processing {encrypted_path}: {e}")
-> 
-> # Decrypt all .24bes files in the current directory
-> for filename in os.listdir("."):
->     if filename.endswith(".24bes"):
->         decrypt_file(filename, key)
->     print("[+] Decryption Completed")
+```
+# Decryption script for HTB Sherlock - LockPick
+# XOR algorithm using key retrieved from reversing the ransomware binary
 
+import os
+
+# decryption key 
+key = "bhUlIshutrea98liOp"
+key_len = len(key)
+
+def decrypt_file(encrypted_path, key):
+    # Ignore ransom notes
+    if encrypted_path.endswith("_note.txt"):
+        print(f"[-] Skipping ransom note: {encrypted_path}")
+        return
+
+    # Skip files that aren't encrypted
+    if not encrypted_path.endswith(".24bes"):
+        print(f"[-] Not a .24bes encrypted file: {encrypted_path}")
+        return
+
+    # Restore original filename by removing the ".24bes" extension
+    original_path = encrypted_path[:-6]
+    
+    try:
+        with open(encrypted_path, "rb") as f:
+            data = bytearray(f.read())
+
+        for i in range(len(data)):
+            data[i] ^= ord(key[i % key_len])
+
+        with open(original_path, "wb") as f:
+            f.write(data)
+
+        print(f"[+] Decrypted: {encrypted_path} → {original_path}")
+
+        # Delete encrypted files
+        os.remove(encrypted_path)
+        print(f"[+]        Removed: {encrypted_path}")
+
+    except Exception as e:
+        print(f"[!] Error processing {encrypted_path}: {e}")
+
+# Decrypt all .24bes files in the current directory
+for filename in os.listdir("."):
+    if filename.endswith(".24bes"):
+        decrypt_file(filename, key)
+    print("[+] Decryption Completed")
+  ```
 
 
 
