@@ -239,7 +239,8 @@ md5sum complaints.csv
   ```
 `c3f05980d9bd945446f8a21bafdbf4e7`
 
-![image](https://github.com/user-attachments/assets/e987b005-c2e2-443e-9b9e-bb863c985183)
+![image](https://github.com/user-attachments/assets/f2de86ea-aa09-48d4-a459-7a730a5ba044)
+
 
 
 
