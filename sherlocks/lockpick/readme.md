@@ -184,24 +184,63 @@ grep -oP '.{0,260}Hart Manifould.{0,53}' it_assets.xml
 QUESTION 5:  
 City of London Police have suspicions of some insider trading taking part within our trading organisation. Please confirm the email address of the person with the highest profit percentage in a single trade alongside the profit percentage (to 25 decimal places).
 
+I wrote a short python script to address this question:
+```
+import json
+from decimal import Decimal
 
+with open("trading-firebase_bkup.json", "r") as f:
+    # Use Decimal for high-precision parsing
+    data = json.load(f, parse_float=Decimal)
 
+max_entry = None
+max_profit = Decimal("-Infinity")
+
+for record in data.values():
+    if "profit_percentage" in record:
+        profit = record["profit_percentage"]
+        if profit > max_profit:
+            max_profit = profit
+            max_entry = record
+
+if max_entry:
+    print(f"Email: {max_entry['email']}")
+    print(f"Profit Percentage: {Decimal(max_entry['profit_percentage']):.25f}")
+else:
+    print("No valid profit_percentage found.")
+  ```
+
+![image](https://github.com/user-attachments/assets/e6005c10-8a37-4cf7-a067-5c22f6b29f4d)
+
+`fmosedale17a@bizjournals.com, 142303.1996053929628411706675436`
 
 QUESTION 6:  
 Our E-Discovery team would like to confirm the IP address detailed in the Sales Forecast log for a user who is suspected of sharing their account with a colleague. Please confirm the IP address for Karylin O'Hederscoll.
-
+`8.254.104.208`
 
 QUESTION 8:  
-We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the applicants DB.
+We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the applicants DB
+```
+md5sum forela_uk_applicants.sql
+  ```
 `f3894af4f1ffa42b3a379dddba384405`
 
 QUESTION 9:  
-We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the trading backup.
+We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the trading backup
+```
+md5sum trading-firebase_bkup.json
+  ```
 `87baa3a12068c471c3320b7f41235669`
 
 QUESTION 10:  
-We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the complaints file.
+We need to confirm the integrity of the files once decrypted. Please confirm the MD5 hash of the complaints file
+```
+md5sum complaints.csv
+  ```
 `c3f05980d9bd945446f8a21bafdbf4e7`
+
+![image](https://github.com/user-attachments/assets/e987b005-c2e2-443e-9b9e-bb863c985183)
+
 
 
 
