@@ -7,6 +7,8 @@
 + [Challenge Description](#challenge-description)
 + [Challenge Files](#challenge-files)
 + [Solution](#Solution)
+  + [Goals](#goals)
+  + [Reversing the Ransomware in with Ghidra](#reversing-the-ransomware-in-with-ghidra)
 </details>
 
 ## Challenge Description
@@ -29,6 +31,15 @@ Once the Sherlock zip has been unzipped, you will find a DANGER.txt file. Please
 [^top](#top)
 ## Solution
 
+### Goals
+Goals:
++ Reverse the ransomware binary
+  + identify the encryption key
+  + identify the encryption algorithm (and possible i/v)
+  + answer some of the challenge questions based on ransomware behaviour
++ Decrypt the files using the identified encryption key
+  + answer the rest of the questions requiring the decrypted files 
+
 I started by downloading the challenge files and unzipping them. We are presented with a bunch of encrypted files located in a folder called `/forela-criticaldata`, with Forela being the name of the ficticious company in the challenge description. 
 
 ![image](https://github.com/user-attachments/assets/66326d47-ac7f-499e-af4f-56bf16abe094)
@@ -45,6 +56,7 @@ Worth noting is there are some intersting strings identified, including file ext
 
 ![image](https://github.com/user-attachments/assets/dd34016b-fff0-4359-add5-124d2ea43b4f)
 
+### Reversing the Ransomware in with Ghidra
 Loading up Ghidra and decompiling main we see a function called `process_directory` which takes 2 arguments, the second being the suspicious string identified earlier which looks like an encryption key. Lets follow the `process_directory` function 
 
 ![image](https://github.com/user-attachments/assets/9b502bb7-181e-422c-8cc6-c3ba92e482cb)
