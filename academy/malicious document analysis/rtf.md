@@ -58,16 +58,18 @@ C:\Tools\Maldoc\Office\Tools\scdbg\scdbg.exe /f shellcode.sc /foff 6f
 
 
 
+Q1 Analyse the shellcode embedded in Project_Outline.doc. Provide the IP addresses the shellcode attempts to communicate with
 ANSWER: `2.59.254.18`
 
 
+Q2 In the same shellcode, what is the name of the file hosted at the remote server
+ANSWER: `lawzx.exe`
 
+Q3 Identify the name of Windows API function that is used to execute the file %APPDATA%\lawserhgj5784.exe in the shellcode
+ANSWER: `CreateProcessW`
 
-
-
-
-
-
+Q4 Identify the URL embedded within the macro in Benefits2024.doc that downloads a payload. Answer Format: https://<URL>/
+ANSWER: ``
 
 
 
