@@ -9,7 +9,7 @@ Content coming soon!
 ## Academy
 + Malicious Document Analysis Module
   + [RTF](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/academy/malicious%20document%20analysis/rtf.md)
-
+  + [DOC](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/academy/malicious%20document%20analysis/doc.md)
 
 ---
 
