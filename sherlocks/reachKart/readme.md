@@ -1,7 +1,9 @@
+<p align="center"><img src="https://github.com/user-attachments/assets/5800ff31-baa2-4405-bd9f-ac8800313e4b"/></p>
+
 ![image](https://github.com/user-attachments/assets/5800ff31-baa2-4405-bd9f-ac8800313e4b)
 
 
-# reachKart (HTB Sherlock)  (DFIR Medium) 
+# ReachKart (HTB Sherlock)  (DFIR Medium) 
 
 ## Description
 
