@@ -123,7 +123,7 @@ After the attacker stole the Ether, what was the balance in their wallet? (Ignor
 
 Answer: `24.40023`
 
-<p align="center"><img src="![image](https://github.com/user-attachments/assets/5d82b61e-cd00-422f-84ab-8055ffac5913)"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/5d82b61e-cd00-422f-84ab-8055ffac5913)"></p>
 
 <p align="center"><img src=""></p>
 
