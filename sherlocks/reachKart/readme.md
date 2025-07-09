@@ -1,6 +1,4 @@
 <a href="#top">^top</a>
-<p align="center"><img src="https://github.com/user-attachments/assets/5800ff31-baa2-4405-bd9f-ac8800313e4b"/></p>
-
 <p align="center"><img src="https://github.com/user-attachments/assets/5dc591af-471e-484a-bfdc-66bb295ace9c"/></p>
 
 # ReachKart (HTB Sherlock)  (DFIR Medium) 
@@ -24,7 +22,8 @@ ZIP Password: hacktheblue
 ### QUESTION 1
 What was the vulnerable endpoint that allowed the attacker to leak files?
 
-
+Answer: `/user/getOrderBill`
+#### /user/getOrderBill
 
 ### QUESTION 2
 When was the first successful exploitation of the vulnerable endpoint by the attacker (time in UTC)?
