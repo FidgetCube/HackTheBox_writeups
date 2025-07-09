@@ -18,6 +18,7 @@ olevba.py C:\Tools\Maldoc\assessment\Benefits2024.docm
 Q4 Identify the URL embedded within the macro in Benefits2024.doc that downloads a payload. Answer Format: `https://<URL>/`
 ANSWER: `https://gitlab.com/DemoTrojan/real/-/raw/main/check.bat`
 
+![image](https://github.com/user-attachments/assets/df4aef80-1cb0-4145-bb1c-541cc2a2b68c)
 
 
 
