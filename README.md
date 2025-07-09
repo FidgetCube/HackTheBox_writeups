@@ -8,7 +8,7 @@ Content coming soon!
 [^top](#top)
 ## Sherlocks
 + [Malware Analysis - Lockpick (easy)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/lockpick/readme.md)
-+ [DFIR - Crypto Theft - reachKart (Medium)](#)
++ [DFIR - Crypto Theft - reachKart (Medium)](#/sherlocks/reachKart/readme.md)
 
 
 ---
