@@ -23,77 +23,105 @@ ZIP Password: hacktheblue
 What was the vulnerable endpoint that allowed the attacker to leak files?
 
 Answer: `/user/getOrderBill`
-#### /user/getOrderBill
+
+
 
 ### QUESTION 2
 When was the first successful exploitation of the vulnerable endpoint by the attacker (time in UTC)?
+
+Answer: ``
+
 
 
 
 ### QUESTION 3
 Which version of Express is currently being used on the server?
 
+Answer: ``
+
 
 
 ### QUESTION 4
 Which Ethereum compatible development smart contract network is running on the server? (Format: name@version)
+
+Answer: ``
 
 
 
 ### QUESTION 5
 What is the signing key used by the server to sign JSON Web Tokens (JWT)?
 
+Answer: ``
+
 
 
 ### QUESTION 6
 The attacker was able to generate a JWT from the signing key and log in to the admin panel. What is the JWT value?
+
+Answer: ``
 
 
 
 ### QUESTION 7
 Decode the token and find the email used by the attacker to log in to the admin panel.
 
+Answer: ``
+
 
 
 ### QUESTION 8
 The admin panel uses WebSocket to send and receive terminal input. What port is being used?
+
+Answer: ``
 
 
 
 ### QUESTION 9
 The attacker then was able to retrieve a sensitive file. When did the attacker get the file (UTC)?
 
+Answer: ``
+
 
 
 ### QUESTION 10
 What is the SHA-256 hash of the file that the attacker downloaded ?
+
+Answer: ``
 
 
 
 ### QUESTION 11
 How manysellers are there in the e-commerce website?
 
+Answer: ``
+
 
 
 ### QUESTION 12
 The attacker started sending Ether from all identified sellers' wallets. What is the hash of the first transaction?
+
+Answer: ``
 
 
 
 ### QUESTION 13
 What was the total amount of Ether stolen by the attacker? (1 Eth = 10^18 wei)
 
+Answer: ``
+
 
 
 ### QUESTION 14
 What is the block number of the last transaction in which Ether was stolen? (Decimal)
+
+Answer: ``
 
 
 
 ### QUESTION 15
 After the attacker stole the Ether, what was the balance in their wallet? (Ignore the trailing zeros)
 
-
+Answer: ``
 
 
 
