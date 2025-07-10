@@ -12,7 +12,7 @@ Unzip all the way down to:
 Command to extract User-Agents
 `cat gitlab_access.log.1 | cut -d '"' -f 6 | sort | uniq -c`
 
-![image](https://github.com/user-attachments/assets/1ba86918-97c9-4b3d-a8ad-ecc5c1ca37d5)
+<p align="center"><img src="https://github.com/user-attachments/assets/1ba86918-97c9-4b3d-a8ad-ecc5c1ca37d5"></p>
 
 Grab the first instance of gobuster
 ```
@@ -23,7 +23,7 @@ line 34
 `10.10.0.74 - - [07/Aug/2023:11:27:19 +0100] "GET / HTTP/1.1" 302 97 "" "gobuster/3.5" -`
 Convert to UTC (-01:00)
 
-![image](https://github.com/user-attachments/assets/3bd73a9a-3438-44fa-9673-e05ce3d83e01)
+<p align="center"><img src="https://github.com/user-attachments/assets/3bd73a9a-3438-44fa-9673-e05ce3d83e01"></p>
 
 ANSWER: `07/08/2023 10:27:19`
 
@@ -59,7 +59,7 @@ How many nested groups are included in the exploit by the attacker?
 
 Count the `MV4-x`
 
-![image](https://github.com/user-attachments/assets/9bd3aa2a-010b-45f5-a1e5-2e1c9f823837)
+<p align="center"><img src="https://github.com/user-attachments/assets/9bd3aa2a-010b-45f5-a1e5-2e1c9f823837"></p>
 
 
 ANSWER: `11`
@@ -74,7 +74,7 @@ timestamp from dumping id_rsa
 cat gitlab_access.log.1 | grep -E "passwd|id_rsa"
   ```
 
-![image](https://github.com/user-attachments/assets/4453e44a-6276-493b-b395-ff8017142737)
+<p align="center"><img src="https://github.com/user-attachments/assets/4453e44a-6276-493b-b395-ff8017142737"></p>
 
 
 ANSWER: `07/08/2023 10:37:38`
