@@ -171,10 +171,8 @@ ANSWER: `T1053.003`
 ## QUESTION 14
 SOC team beleives that the threat actor wanted to exfiltrate data. We are not yet sure whether they were successful or not. Which tool was downloaded by the attacker? Please confirm the name and version of this tool.
 
+Go back to the timeline file identified before, apply a filter on the column for user=sam and identify the rclone zip file
 
-```
-
-  ```
 ANSWER: `rclone/1.63.1`
 
-
+![image](https://github.com/user-attachments/assets/8894e34c-37dd-480c-88eb-cf7d61669a86)
