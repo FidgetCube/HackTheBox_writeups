@@ -1,4 +1,4 @@
-<a href="#top">^top</a>
+<a href="#top"></a>
 <p align="center"><img src="https://github.com/user-attachments/assets/a54b69e5-bec1-42f9-9d1a-e6c73822356c"/></p>
 
 # Getlab-D (HTB Sherlock) (DFIR - Linux - Easy) 
