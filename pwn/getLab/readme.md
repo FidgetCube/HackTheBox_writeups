@@ -102,10 +102,10 @@ chmod 600 id_rsa
 Then you can ssh into the box
 
 ```
-ssh -i id_rsa git@10.129.252.245
+ssh -i id_rsa sam@10.129.252.245
   ```
 
-ANSWER: ``
+ANSWER: `a19d69891e1a4039816852072620b80e`
 
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
