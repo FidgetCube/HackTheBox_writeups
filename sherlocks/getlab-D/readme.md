@@ -115,10 +115,15 @@ ANSWER: `31`
 ## QUESTION 10
 We got an alert about a possible malicious file named "syncautomation.sh". When was this file downloaded/created at the endpoint. Please input in UTC format.
 
-
+Recursively grep for the filename (case insensitive) from the root folder and suppress errors
 ```
-
+grep -ri "syncautomation.sh" / 2>/dev/null
   ```
+Returns this result, the 4th timestamp is File Creation, which can be confirmed by opening the CSV and checking column headers
+`/home/kali/Documents/HTB/Sherlocks/GetLab-D/catscale_out/Misc/getlab-20230808-0930-full-timeline.csv:322490,1,/home/sam/syncautomation.sh,2023-08-07 11:57:26.181608597 +0100,2023-08-07 11:56:46.717608724 +0100,2023-08-07 11:57:15.413608632 +0100,2023-08-07 11:56:45.905608726 +0100,sam,sam,-rwxr-xr-x,836755`
+
+Convert to UTC
+
 ANSWER: `07/08/2023 10:56:45`
 
 
