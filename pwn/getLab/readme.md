@@ -108,4 +108,5 @@ ssh -i id_rsa sam@10.129.252.245
 ANSWER: `a19d69891e1a4039816852072620b80e`
 
 
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/cc1cc175-93a7-4d81-b42c-553e2ff2a91d"/></p>
+
