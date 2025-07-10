@@ -159,10 +159,10 @@ ANSWER: `/home/sam/cloudfetch.bin`
 ## QUESTION 13
 What is the mitre technique ID for the persistence mechanism employed by the attacker?
 
+Go to the MITRE ATT&CK website
 
-```
+![image](https://github.com/user-attachments/assets/db1cf0d2-04bc-475b-a23d-b77f3d54d1d7)
 
-  ```
 ANSWER: `T1053.003`
 
 
