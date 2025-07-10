@@ -32,6 +32,6 @@ Content coming soon!
 
 [^top](#top)
 ## Pwn
-+ [](#)
++ [Getlab - Pwn (Linux Easy)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/pwn/getLab/readme.md)
 + [](#)
 
