@@ -86,20 +86,25 @@ ANSWER: `/var/opt/gitlab/.ssh/id_rsa`
 ## ROOT FLAG
 Submit the flag located in the sam user's home directory
 
-Edit the PoC script to show this path, replacing the 'etc' with the 'var' so it hits the right location
+Edit the PoC script to show this path, replacing the 'etc' with the 'var' so it hits the right location  
 `var%2fopt%2fgitlab%2f.ssh%2fid_rsa`
 
-That will download the SSH private key, which we can use to pwn the box
+That will print the SSH private key, which we can use to pwn the box. Save it into a file called `id_rsa` in the same directory.
 
-`ssh -i id_rsa git@10.129.252.245`
-incorrect perms on id_rsa, edit permissions
-`chmod 600 id_rsa`
+If you attempt to use the id_rsa key without changing permissions you will get an error, you must run this first
+```
+chmod 600 id_rsa
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/76d56d70-e94d-45f7-acdf-ce5f8ac77b6c"/></p>
 
 
+Then you can ssh into the box
 
 ```
-
+ssh -i id_rsa git@10.129.252.245
   ```
+
 ANSWER: ``
 
 
