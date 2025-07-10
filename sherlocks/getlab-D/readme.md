@@ -99,22 +99,74 @@ At what time did the attacker remotely access the server? please input in UTC fo
 ```
 
   ```
-ANSWER: ``
+ANSWER: `07/08/2023 10:44:15`
 
 
-## 
+## QUESTION 9
+Attacker performed horizontal lateral movement to access another user on the system. For how many minutes did this session last?
+
 
 ```
 
   ```
-ANSWER: ``
+ANSWER: `31`
 
 
-## 
+## QUESTION 10
+We got an alert about a possible malicious file named "syncautomation.sh". When was this file downloaded/created at the endpoint. Please input in UTC format.
+
 
 ```
 
   ```
-ANSWER: ``
+ANSWER: `07/08/2023 10:56:45`
+
+
+
+
+## QUESTION 11
+What was the size of this file in bytes?
+
+
+```
+
+  ```
+ANSWER: `836755`
+
+
+
+
+## QUESTION 12
+Netflow data indicated that the attacker has dropped a persistence mechanism on the machine, please find the name and full path of the file used for persistence.
+
+
+```
+
+  ```
+ANSWER: `/home/sam/cloudfetch.bin`
+
+
+
+
+## QUESTION 13
+What is the mitre technique ID for the persistence mechanism employed by the attacker?
+
+
+```
+
+  ```
+ANSWER: `T1053.003`
+
+
+
+
+## QUESTION 14
+SOC team beleives that the threat actor wanted to exfiltrate data. We are not yet sure whether they were successful or not. Which tool was downloaded by the attacker? Please confirm the name and version of this tool.
+
+
+```
+
+  ```
+ANSWER: `rclone/1.63.1`
 
 
