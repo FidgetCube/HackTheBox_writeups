@@ -65,21 +65,8 @@ ANSWER: `CVE-2023-2825`
 ## QUESTION 5
 If we wanted to traverse back 6 directories using CVE-2023-2825, how many nested groups in a repository would be required?
 
-curl command
+We need to go back the number of executed +1
 
-append to curl for id_rsa
-`var%2fopt%2fgitlab%2f.ssh%2fid_rsa`
-
-`/var/opt/gitlab/.ssh/id_rsa`
-
-`ssh -i id_rsa git@10.129.252.245`
-incorrect perms on id_rsa, edit permissions
-`chmod 600 id_rsa`
-
-
-```
-executed +1
-  ```
 ANSWER: `7`
 
 
@@ -87,23 +74,28 @@ ANSWER: `7`
 ## QUESTION 6
 What is the home directory of the git user?
 
-
-```
-
-  ```
 ANSWER: `/var/opt/gitlab`
 
 
 ## QUESTION 7 
 What is the full path of the private SSH key of the git user?
-```
 
-  ```
 ANSWER: `/var/opt/gitlab/.ssh/id_rsa`
 
 
 ## ROOT FLAG
 Submit the flag located in the sam user's home directory
+
+Edit the PoC script to show this path, replacing the 'etc' with the 'var' so it hits the right location
+`var%2fopt%2fgitlab%2f.ssh%2fid_rsa`
+
+That will download the SSH private key, which we can use to pwn the box
+
+`ssh -i id_rsa git@10.129.252.245`
+incorrect perms on id_rsa, edit permissions
+`chmod 600 id_rsa`
+
+
 
 ```
 
