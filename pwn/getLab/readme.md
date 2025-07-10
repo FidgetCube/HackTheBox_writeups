@@ -1,4 +1,25 @@
+<a id="top"></a>
+<p align="center"><img src="https://github.com/user-attachments/assets/de41ac6e-ba70-41cf-bc13-d93fd788e35c"/></p>
 
+# Getlab (Pwn - Very Easy)
+
+<details>
+  <summary>Table of Contents</summary>
+  
++ [Challenge Description](#challenge-description)
++ [Solution](#Solution)
+</details>
+
+## Challenge Description
+
+summary
+
+>GetLab is a very easy Linux machine that showcases an unauthenticated directory traversal vulnerability in GitLab 16.0.0, labeled CVE-2023-2825. Although the vulnerability itself does not require authentication, specific conditions have to be met in order to trigger it. User self-registration is enabled on the GitLab instance running on the machine, which allows attackers to log in under a new account and create a repository matching the required conditions, from which they can then retrieve arbitrary files in the context of the git user (which is running the GitLab application) including a private SSH key, which grants access as both the git user and an unprivileged user named sam.
+
+---
+
+[^top](#top)
+## Solution
 
 ## QUESTION 1
 What is the name of the web server listening on port 80?
@@ -6,7 +27,7 @@ What is the name of the web server listening on port 80?
 ```
 nmap -p 80 -A 10.129.252.245
   ```
-![image](https://github.com/user-attachments/assets/2c1a7d11-bb17-4cac-8c59-e97f19b7d9c8)
+<p align="center"><img src="https://github.com/user-attachments/assets/2c1a7d11-bb17-4cac-8c59-e97f19b7d9c8"/></p>
 
 ANSWER: `nginx`
 
@@ -90,13 +111,4 @@ Submit the flag located in the sam user's home directory
 ANSWER: ``
 
 
-
-
-## 
-
-```
-
-  ```
-ANSWER: ``
-
-
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
