@@ -12,7 +12,11 @@ When did attacker start enumerating the web server? Please input the time in UTC
 Command to extract User-Agents
 `cat gitlab_access.log* | cut -d '"' -f 6 | sort | uniq -c`
 
-ANSWER: ``
+line 34
+`10.10.0.74 - - [07/Aug/2023:11:27:19 +0100] "GET / HTTP/1.1" 302 97 "" "gobuster/3.5" -`
+Convert to UTC (-01:00)
+
+ANSWER: `07/08/2023 10:27:19`
 
 
 ## QUESTION 2
