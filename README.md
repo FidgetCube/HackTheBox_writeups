@@ -15,8 +15,9 @@ Content coming soon!
 
 [^top](#top)
 ## Sherlocks
-+ [Malware Analysis - Lockpick (easy)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/lockpick/readme.md)
-+ [DFIR - Crypto Theft - reachKart (Medium)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/reachKart/readme.md)
++ [Lockpick - Malware Analysis (easy)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/lockpick/readme.md)
++ [reachKart - DFIR (Crypto Theft - Medium)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/reachKart/readme.md)
++ [Getlab-D - DFIR (Linux Forensics - Easy)](https://github.com/FidgetCube/HackTheBox_writeups/tree/main/sherlocks/getlab-D#readme)
 
 
 ---
