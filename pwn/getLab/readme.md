@@ -105,6 +105,8 @@ Then you can ssh into the box
 ssh -i id_rsa sam@10.129.252.245
   ```
 
+<p align="center"><img src="https://github.com/user-attachments/assets/2c81ed8a-4163-4fcf-8f20-28fb626de50e"/></p>
+
 ANSWER: `a19d69891e1a4039816852072620b80e`
 
 
