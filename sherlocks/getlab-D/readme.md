@@ -136,7 +136,7 @@ This is the final field in the above output, which can be determined by this nea
 (head -n1 getlab-20230808-0930-full-timeline.csv && grep -i "syncautomation.sh" getlab-20230808-0930-full-timeline.csv) | column -s, -t
   ```
 
-![image](https://github.com/user-attachments/assets/f215640c-5af0-468f-b402-28b6fcbca38b)
+<p align="center"><img src="https://github.com/user-attachments/assets/f215640c-5af0-468f-b402-28b6fcbca38b"></p>
 
 ANSWER: `836755`
 
@@ -149,7 +149,7 @@ Netflow data indicated that the attacker has dropped a persistence mechanism on 
 Under the main folder, there was a folder called "Persistence", unzip the archive within to finf the following file:
 `GetLab-D/catscale_out/Persistence/var/spool/cron/crontabs/sam`
 
-![image](https://github.com/user-attachments/assets/478b51d7-2da5-4f90-a250-08df558a2e24)
+<p align="center"><img src="https://github.com/user-attachments/assets/478b51d7-2da5-4f90-a250-08df558a2e24"></p>
 
 ANSWER: `/home/sam/cloudfetch.bin`
 
@@ -161,7 +161,7 @@ What is the mitre technique ID for the persistence mechanism employed by the att
 
 Go to the MITRE ATT&CK website
 
-![image](https://github.com/user-attachments/assets/db1cf0d2-04bc-475b-a23d-b77f3d54d1d7)
+<p align="center"><img src="https://github.com/user-attachments/assets/db1cf0d2-04bc-475b-a23d-b77f3d54d1d7"></p>
 
 ANSWER: `T1053.003`
 
@@ -175,4 +175,4 @@ Go back to the timeline file identified before, apply a filter on the column for
 
 ANSWER: `rclone/1.63.1`
 
-![image](https://github.com/user-attachments/assets/8894e34c-37dd-480c-88eb-cf7d61669a86)
+<p align="center"><img src="https://github.com/user-attachments/assets/8894e34c-37dd-480c-88eb-cf7d61669a86"></p>
