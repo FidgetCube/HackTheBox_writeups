@@ -1,7 +1,29 @@
+<a href="#top">^top</a>
+<p align="center"><img src="https://github.com/user-attachments/assets/a54b69e5-bec1-42f9-9d1a-e6c73822356c"/></p>
 
-download + unzip
+# Getlab-D (HTB Sherlock) (DFIR - Linux - Easy) 
 
-`chmod 755 -R catscale_out`
+## Description
+
+Linux forensics investigation
+
+Challenge Description:
+
+>You have received a call at 1 am, summoning you to work. There has been an incident at Forela, where you are the senior incident responder. A Linux server has been compromised and placed under containment. The server running GitLab has had many private internal repositories stored. The SOC team believes that data exfiltration has happened or at least been attempted. Also, the scope of the incident is unknown at this time. The contained host has been only accessible internally, which implies that the attacker has used other internal hosts to pivot from. The SOC analyst on duty has already triaged the endpoint and has provided you with the triaged collection to analyze.
+
+## Resources
+
+[Download file link](https://challenges-cdn.hackthebox.com/sherlocks/easy/getlab-d.zip?u=117571&p=ep&e=1752147949&t=1752140749&h=a9044b7ef45fd8967c8eca9e8554dc736fb50878ac91b8e9dffa74b296f2b5c5)
+
+ZIP Password: hacktheblue
+
+## Solution
+
+Download and unzip the archives. Once unzipped, you will need to edit permissions on the folder so you can access the files
+
+```
+chmod 755 -R catscale_out
+  ```
 
 ## QUESTION 1
 When did attacker start enumerating the web server? Please input the time in UTC format
