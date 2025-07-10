@@ -106,9 +106,8 @@ ANSWER: `07/08/2023 10:44:15`
 Attacker performed horizontal lateral movement to access another user on the system. For how many minutes did this session last?
 
 
-```
 
-  ```
+
 ANSWER: `31`
 
 
@@ -132,10 +131,13 @@ ANSWER: `07/08/2023 10:56:45`
 ## QUESTION 11
 What was the size of this file in bytes?
 
-
+This is the final field in the above output, which can be determined by this neat one-liner
 ```
-
+(head -n1 getlab-20230808-0930-full-timeline.csv && grep -i "syncautomation.sh" getlab-20230808-0930-full-timeline.csv) | column -s, -t
   ```
+
+![image](https://github.com/user-attachments/assets/f215640c-5af0-468f-b402-28b6fcbca38b)
+
 ANSWER: `836755`
 
 
