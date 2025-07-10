@@ -146,10 +146,11 @@ ANSWER: `836755`
 ## QUESTION 12
 Netflow data indicated that the attacker has dropped a persistence mechanism on the machine, please find the name and full path of the file used for persistence.
 
+Under the main folder, there was a folder called "Persistence", unzip the archive within to finf the following file:
+`GetLab-D/catscale_out/Persistence/var/spool/cron/crontabs/sam`
 
-```
+![image](https://github.com/user-attachments/assets/478b51d7-2da5-4f90-a250-08df558a2e24)
 
-  ```
 ANSWER: `/home/sam/cloudfetch.bin`
 
 
