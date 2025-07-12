@@ -72,7 +72,7 @@ Answer: `Director_tomcat_memShell`
 
 
 ### QUESTION 5
-
+One of the files in this directory may give some insight into the threat actor's origin. What is the file?
 
 ```
 
@@ -80,7 +80,7 @@ Answer: `Director_tomcat_memShell`
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `pom.xml`
 
 
 
@@ -88,30 +88,22 @@ Answer: ``
 
 
 ### QUESTION 6
-
-
-```
-
-  ```
+According to Google Translate, what language is the suspicious text?
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `Chinese`
 
 
 
 
 
 ### QUESTION 7
-
-
-```
-
-  ```
+What is the translation in English?
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `Check for the latest version`
 
 
 
@@ -119,15 +111,11 @@ Answer: ``
 
 
 ### QUESTION 8
-
-
-```
-
-  ```
+According to this file, what is the application's name?
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `VersaTest`
 
 
 
@@ -135,6 +123,8 @@ Answer: ``
 
 
 ### QUESTION 9
+The VersaMem web shell works by hooking Tomcat. Which file holds the functionality to accomplish this?
+
 
 
 ```
@@ -143,14 +133,14 @@ Answer: ``
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `com/versa/vnms/ui/TestMain.class`
 
 
 
 
 
 ### QUESTION 10
-
+There is a command that determines the PID for the hook. What is the program used in this line of code?
 
 ```
 
@@ -158,7 +148,7 @@ Answer: ``
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `pgrep`
 
 
 
@@ -166,7 +156,7 @@ Answer: ``
 
 
 ### QUESTION 11
-
+The functionality for the webshell is in a different file. What is its name?
 
 ```
 
@@ -174,14 +164,14 @@ Answer: ``
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `com/versa/vnms/ui/init/WriteTestTransformer.class`
 
 
 
 
 
 ### QUESTION 12
-
+What is the name of the function that deals with authentication into the webshell?
 
 ```
 
@@ -189,7 +179,7 @@ Answer: ``
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `getinsertcode`
 
 
 
@@ -199,7 +189,7 @@ Answer: ``
 
 
 ### QUESTION 13
-
+What request parameter must be present to activate the webshell logic?
 
 ```
 
@@ -207,7 +197,7 @@ Answer: ``
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `p`
 
 
 
@@ -216,7 +206,7 @@ Answer: ``
 
 
 ### QUESTION 14
-
+What is the hardcoded access password used to validate incoming webshell requests?
 
 ```
 
@@ -224,7 +214,7 @@ Answer: ``
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
-Answer: ``
+Answer: `5ea23db511e1ac4a806e002def3b74a1`
 
 
 
@@ -232,7 +222,80 @@ Answer: ``
 
 
 ### QUESTION 15
+What type of encryption is used?
 
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `AES`
+
+
+
+### QUESTION 16
+What cipher mode is used to encrypt the credentials?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `ecb`
+
+
+### QUESTION 17
+What is the key?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `56, 50, 97, 100, 52, 50, 99, 50, 102, 100, 101, 56, 55, 52, 99, 53, 54, 101, 101, 50, 49, 52, 48, 55, 101, 57, 48, 57, 48, 52, 97, 97`
+
+
+### QUESTION 18
+What is the value of the key after decoding?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `82ad42c2fde874c56ee21407e90904aa`
+
+
+### QUESTION 19
+To avoid static detection, the method name is constructed at runtime and passed to java.lang.reflect.Method, what is the decimal byte array used to construct the string name?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `100, 101, 102, 105, 110, 101, 67, 108, 97, 115, 115`
+
+
+### QUESTION 20
+What is the Base64-encoded string that is returned to the client if the class is successfully defined?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `R2qBFRx0KAZceVi+MWP6FGGs8MMoJRV5M3KY/GBiOn8=`
+
+
+### QUESTION 21
+What is the decrypted string?
 
 ```
 
@@ -242,6 +305,53 @@ Answer: ``
 
 Answer: ``
 
+
+### QUESTION 22
+There is another class to log passwords for exfiltration. What is this file?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `com/versa/vnms/ui/init/capturepasstransformer.class`
+
+
+### QUESTION 23
+What is the main malicious function in this class?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `captureloginpasswordcode`
+
+
+### QUESTION 24
+The same AES key from the previous method is being used. What is the variable name it is being saved as in this function?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `secretkey`
+
+
+### QUESTION 25
+What file is used to hold credentials before exfiltration?
+
+```
+
+  ```
+
+<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+
+Answer: `/tmp/.temp.data`
 
 
 Solve
