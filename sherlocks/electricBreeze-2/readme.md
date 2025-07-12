@@ -8,6 +8,7 @@
   
 + [Challenge Description](#challenge-description)
 + [Challenge Files](#challenge-files)
++ [References](#references)
 + [Solution](#Solution)
 </details>
 
@@ -23,6 +24,12 @@ This challenge is reversing a piece of malware called VersaMem, deployed by Volt
 ## Challenge Files
 
 Downloading the sample is actually part of [Question 1](#question-1) and can found in the solution section
+
+---
+
+[^top](#top)
+## References
++ [Lumen - Technical analysis of VersaMem](https://blog.lumen.com/uncovering-the-versa-director-zero-day-exploitation/)
 
 ---
 
