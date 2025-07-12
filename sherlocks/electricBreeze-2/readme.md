@@ -61,15 +61,11 @@ Answer: `.jar`
 
 
 ### QUESTION 4
+What is a suspicious directory in META-INF?
 
+<p align="center"><img src="https://github.com/user-attachments/assets/f8808fad-35c7-4417-842e-0dc0663d0dfe"/></p>
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
-
-Answer: ``
+Answer: `Director_tomcat_memShell`
 
 
 
