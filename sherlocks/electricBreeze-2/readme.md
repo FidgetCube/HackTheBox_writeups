@@ -308,7 +308,7 @@ Take the base64 encoded string `R2qBFRx0KAZceVi+MWP6FGGs8MMoJRV5M3KY/GBiOn8=` an
 
 **Note:** Electronic Code Book (ECB) doesn't require an Initialisation Vector (i/v).
 
-I wrote a python script to perform this which can be found in the attached files
+I wrote a python script to perform this which [decrypt_VersaMem.py](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/electricBreeze-2/decrypt_VersaMem.py)
 
 <p align="center"><img src="https://github.com/user-attachments/assets/170c8249-0124-4d06-8e37-00d5babf93da"/></p>
 
