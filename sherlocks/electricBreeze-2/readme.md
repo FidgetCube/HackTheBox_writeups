@@ -50,15 +50,11 @@ Answer: `infected`
 
 
 ### QUESTION 3
+What is the extension of the file once unzipping?
 
+<p align="center"><img src="https://github.com/user-attachments/assets/c5eea26f-4735-4b74-ad85-9b4a9ed99e7d"/></p>
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
-
-Answer: ``
+Answer: `.jar`
 
 
 
