@@ -1,5 +1,5 @@
 <a id="top"></a>
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/44436ad5-2eed-42cd-afa9-1ad35a6ebae9"/></p>
 
 # HTB Sherlock - ElectrivBreeze-2 (Malware-Analysis - Easy)
 
