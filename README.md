@@ -16,6 +16,7 @@ Content coming soon!
 [^top](#top)
 ## Sherlocks
 + [Lockpick - Malware Analysis (easy)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/lockpick/readme.md)
++ [ElectricBreeze-2 - Malware Analysis - VersaMem (Easy)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/electricBreeze-2/readme.md)
 + [reachKart - DFIR (Crypto Theft - Medium)](https://github.com/FidgetCube/HackTheBox_writeups/blob/main/sherlocks/reachKart/readme.md)
 + [Getlab-D - DFIR (Linux Forensics - Easy)](https://github.com/FidgetCube/HackTheBox_writeups/tree/main/sherlocks/getlab-D#readme)
 
