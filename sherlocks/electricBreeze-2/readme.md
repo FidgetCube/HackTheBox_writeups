@@ -304,9 +304,13 @@ Answer: `R2qBFRx0KAZceVi+MWP6FGGs8MMoJRV5M3KY/GBiOn8=`
 ### QUESTION 21
 What is the decrypted string?
 
-Take the base64 encoded string `R2qBFRx0KAZceVi+MWP6FGGs8MMoJRV5M3KY/GBiOn8=` and AES decrpty in ECB mode with the raw byte string of the key `56 50 97 100 52 50 99 50 102 100 101 56 55 52 99 53 54 101 101 50 49 52 48 55 101 57 48 57 48 52 97 97`
+Take the base64 encoded string `R2qBFRx0KAZceVi+MWP6FGGs8MMoJRV5M3KY/GBiOn8=` and AES decrypt in ECB mode with the raw byte string of the key `56 50 97 100 52 50 99 50 102 100 101 56 55 52 99 53 54 101 101 50 49 52 48 55 101 57 48 57 48 52 97 97`.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+**Note:** Electronic Code Book (ECB) doesn't require an Initialisation Vector (i/v).
+
+I wrote a python script to perform this which can be found in the attached files
+
+<p align="center"><img src="https://github.com/user-attachments/assets/170c8249-0124-4d06-8e37-00d5babf93da"/></p>
 
 Answer: `classDefine by clzd`
 
