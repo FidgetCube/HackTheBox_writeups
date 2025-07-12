@@ -41,9 +41,7 @@ Answer: `https://bazaar.abuse.ch/download/4bcedac20a75e8f8833f4725adfc87577c3299
 ### QUESTION 2
 What is the password to unlock the zip?
 
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
-<img width="1237" height="504" alt="image" src="https://github.com/user-attachments/assets/8e124ea4-2695-4d27-aa78-7920029b8261" />
-
+<p align="center"><img src="https://github.com/user-attachments/assets/8e124ea4-2695-4d27-aa78-7920029b8261"/></p>
 
 Answer: `infected`
 
