@@ -32,6 +32,8 @@ Downloading the sample is actually part of [Question 1](#question-1) and can fou
 ### QUESTION 1
 Use MalwareBazaar to download a copy of the file with the hash '4bcedac20a75e8f8833f4725adfc87577c32990c3783bf6c743f14599a176c37'. What is the URL to do this?
 
+Visit: https://bazaar.abuse.ch/download/4bcedac20a75e8f8833f4725adfc87577c32990c3783bf6c743f14599a176c37/
+
 Answer: `https://bazaar.abuse.ch/download/4bcedac20a75e8f8833f4725adfc87577c32990c3783bf6c743f14599a176c37/`
 
 
