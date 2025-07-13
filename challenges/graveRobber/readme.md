@@ -1,6 +1,10 @@
 
 
-
+bash proof script
+```
+$export string='HTB{paste flag}'
+└──╼ $for i in `seq 0 ${#string}`; do char="${string:i:1}"; mkdir ./$char/; cd ./$char/; done
+```
 
 
 
