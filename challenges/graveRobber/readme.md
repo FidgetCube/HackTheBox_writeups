@@ -30,21 +30,29 @@ ZIP Password: hackthebox
 ## Solution
 
 Application running
+
 <img width="212" height="44" alt="image" src="https://github.com/user-attachments/assets/b052e40b-5679-4628-9131-d1996a78a5c9" />
 
 strace 1
+
 <img width="717" height="185" alt="image" src="https://github.com/user-attachments/assets/3e743bbf-bb96-457c-9ea6-dcb0702b5bcd" />
 
+`newfstatat(AT_FDCWD, "H/", 0x7ffdff8e39a0, 0) = -1 ENOENT (No such file or directory)`
+
 Created folder `H/`
+
 <img width="286" height="116" alt="image" src="https://github.com/user-attachments/assets/5d018143-dfb7-4aa2-baf3-f35b7e8c3df7" />
 
 strace 2
+
 <img width="653" height="36" alt="image" src="https://github.com/user-attachments/assets/2eca496c-a5c2-412e-a774-52d0e230de9d" />
 
 Folder Path `H/T/`
+
 <img width="584" height="83" alt="image" src="https://github.com/user-attachments/assets/f3a84b6c-66e2-482e-b02e-8e83314c3ac5" />
 
 strace 3
+
 <img width="731" height="58" alt="image" src="https://github.com/user-attachments/assets/9136ffdd-98a5-4056-9427-d3c90a76486a" />
 
 
