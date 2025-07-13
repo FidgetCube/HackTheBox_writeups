@@ -20,7 +20,7 @@
 [^top](#top)
 ## Challenge Files
 
-[Download file link](https://)
+[Download file link](graverobber.zip)
 
 ZIP Password: hackthebox
 
