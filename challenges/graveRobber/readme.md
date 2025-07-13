@@ -221,6 +221,12 @@ main() -
 
 
 
+Solve proof bash & zsh
+
+<img width="1028" height="175" alt="image" src="https://github.com/user-attachments/assets/e490fdd9-0c44-4007-9b8d-2099e37e36a1" />
+
+Folder structure
+<img width="521" height="50" alt="image" src="https://github.com/user-attachments/assets/15654d8c-2000-4a34-b1dc-d223c00ebcf5" />
 
 
 
