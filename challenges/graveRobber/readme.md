@@ -36,7 +36,7 @@ echo $SHELL
 
 (zsh)
 ```
-string='HTB{br34k1n9_d0wn_th3_sysc4ll5}'; d="$PWD"; for ((i=0;i<${#string};i++)); do c="${string:i:1}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber
+string='HTB{br34k1n9_d0wn_th3_sysc4ll5}'; d="$PWD"; for i in {1..${#string}}; do c="${string[i,i]}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber
 ```
 
 Force bash:
