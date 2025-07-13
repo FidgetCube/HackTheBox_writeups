@@ -4,7 +4,14 @@
 
 
 
+Application running
+<img width="212" height="44" alt="image" src="https://github.com/user-attachments/assets/b052e40b-5679-4628-9131-d1996a78a5c9" />
 
+Created folder `H/`
+<img width="286" height="116" alt="image" src="https://github.com/user-attachments/assets/5d018143-dfb7-4aa2-baf3-f35b7e8c3df7" />
+
+Folder Path `H/T/`
+<img width="584" height="83" alt="image" src="https://github.com/user-attachments/assets/f3a84b6c-66e2-482e-b02e-8e83314c3ac5" />
 
 
 
@@ -21,8 +28,131 @@ strace 2
 strace 3
 <img width="731" height="58" alt="image" src="https://github.com/user-attachments/assets/9136ffdd-98a5-4056-9427-d3c90a76486a" />
 
-
+Ghidra - parts[]
 <img width="1033" height="689" alt="image" src="https://github.com/user-attachments/assets/0603e8dc-3f5a-4cc0-a097-6db240b0f901" />
+
+Ghidra main()
+
+>undefined8 main(void)
+{
+  int iVar1;
+  undefined8 uVar2;
+  long in_FS_OFFSET;
+  uint local_ec;
+  stat local_e8;
+  char local_58 [72];
+  long local_10;
+    local_10 = *(long *)(in_FS_OFFSET + 0x28);
+  local_58[0] = '\0';
+  local_58[1] = '\0';
+  local_58[2] = '\0';
+  local_58[3] = '\0';
+  local_58[4] = '\0';
+  local_58[5] = '\0';
+  local_58[6] = '\0';
+  local_58[7] = '\0';
+  local_58[8] = '\0';
+  local_58[9] = '\0';
+  local_58[10] = '\0';
+  local_58[0xb] = '\0';
+  local_58[0xc] = '\0';
+  local_58[0xd] = '\0';
+  local_58[0xe] = '\0';
+  local_58[0xf] = '\0';
+  local_58[0x10] = '\0';
+  local_58[0x11] = '\0';
+  local_58[0x12] = '\0';
+  local_58[0x13] = '\0';
+  local_58[0x14] = '\0';
+  local_58[0x15] = '\0';
+  local_58[0x16] = '\0';
+  local_58[0x17] = '\0';
+  local_58[0x18] = '\0';
+  local_58[0x19] = '\0';
+  local_58[0x1a] = '\0';
+  local_58[0x1b] = '\0';
+  local_58[0x1c] = '\0';
+  local_58[0x1d] = '\0';
+  local_58[0x1e] = '\0';
+  local_58[0x1f] = '\0';
+  local_58[0x20] = '\0';
+  local_58[0x21] = '\0';
+  local_58[0x22] = '\0';
+  local_58[0x23] = '\0';
+  local_58[0x24] = '\0';
+  local_58[0x25] = '\0';
+  local_58[0x26] = '\0';
+  local_58[0x27] = '\0';
+  local_58[0x28] = '\0';
+  local_58[0x29] = '\0';
+  local_58[0x2a] = '\0';
+  local_58[0x2b] = '\0';
+  local_58[0x2c] = '\0';
+  local_58[0x2d] = '\0';
+  local_58[0x2e] = '\0';
+  local_58[0x2f] = '\0';
+  local_58[0x30] = '\0';
+  local_58[0x31] = '\0';
+  local_58[0x32] = '\0';
+  local_58[0x33] = '\0';
+  local_58[0x34] = '\0';
+  local_58[0x35] = '\0';
+  local_58[0x36] = '\0';
+  local_58[0x37] = '\0';
+  local_58[0x38] = '\0';
+  local_58[0x39] = '\0';
+  local_58[0x3a] = '\0';
+  local_58[0x3b] = '\0';
+  local_58[0x3c] = '\0';
+  local_58[0x3d] = '\0';
+  local_58[0x3e] = '\0';
+  local_58[0x3f] = '\0';
+  local_58[0x40] = '\0';
+  local_58[0x41] = '\0';
+  local_58[0x42] = '\0';
+  local_58[0x43] = '\0';
+  local_ec = 0;
+  do {
+    if (0x1f < local_ec) {
+      puts("We found the treasure! (I hope it\'s not cursed)");
+      uVar2 = 0;
+LAB_00101256:
+      if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+        __stack_chk_fail();
+      }
+      return uVar2;
+    }
+    local_58[(int)(local_ec * 2)] = (char)*(undefined4 *)(parts + (long)(int)local_ec * 4);
+    local_58[(int)(local_ec * 2 + 1)] = '/';
+    iVar1 = stat(local_58,&local_e8);
+    if (iVar1 != 0) {
+      puts("We took a wrong turning!");
+      uVar2 = 1;
+      goto LAB_00101256;
+    }
+    local_ec = local_ec + 1;
+  } while( true );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
