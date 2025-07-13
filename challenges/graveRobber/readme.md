@@ -68,6 +68,9 @@ main() - stat() & parts[]
 <p align="center"><img src="https://github.com/user-attachments/assets/02e82224-e3ee-44d0-b829-f16adf45afe9"/></p>
 
 
+<details>
+  <summary>Expand for full Main() code</summary>
+
 Ghidra main()
 
 >undefined8 main(void)  
@@ -171,7 +174,7 @@ LAB_00101256:
     local_ec = local_ec + 1;  
   } while( true );  
 }
-
+</details>
 
 
 
