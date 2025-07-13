@@ -31,29 +31,29 @@ ZIP Password: hackthebox
 
 Application running
 
-<img width="212" height="44" alt="image" src="https://github.com/user-attachments/assets/b052e40b-5679-4628-9131-d1996a78a5c9" />
+<p align="center"><img src="https://github.com/user-attachments/assets/b052e40b-5679-4628-9131-d1996a78a5c9"/></p>
 
 strace 1
 
-<img width="717" height="185" alt="image" src="https://github.com/user-attachments/assets/3e743bbf-bb96-457c-9ea6-dcb0702b5bcd" />
+<p align="center"><img src="https://github.com/user-attachments/assets/3e743bbf-bb96-457c-9ea6-dcb0702b5bcd"/></p>
 
 `newfstatat(AT_FDCWD, "H/", 0x7ffdff8e39a0, 0) = -1 ENOENT (No such file or directory)`
 
 Created folder `H/`
 
-<img width="286" height="116" alt="image" src="https://github.com/user-attachments/assets/5d018143-dfb7-4aa2-baf3-f35b7e8c3df7" />
+<p align="center"><img src="https://github.com/user-attachments/assets/5d018143-dfb7-4aa2-baf3-f35b7e8c3df7"/></p>
 
 strace 2
 
-<img width="653" height="36" alt="image" src="https://github.com/user-attachments/assets/2eca496c-a5c2-412e-a774-52d0e230de9d" />
+<p align="center"><img src="https://github.com/user-attachments/assets/2eca496c-a5c2-412e-a774-52d0e230de9d"/></p>
 
 Folder Path `H/T/`
 
-<img width="584" height="83" alt="image" src="https://github.com/user-attachments/assets/f3a84b6c-66e2-482e-b02e-8e83314c3ac5" />
+<p align="center"><img src="https://github.com/user-attachments/assets/f3a84b6c-66e2-482e-b02e-8e83314c3ac5"/></p>
 
 strace 3
 
-<img width="731" height="58" alt="image" src="https://github.com/user-attachments/assets/9136ffdd-98a5-4056-9427-d3c90a76486a" />
+<p align="center"><img src="https://github.com/user-attachments/assets/9136ffdd-98a5-4056-9427-d3c90a76486a"/></p>
 
 
 
@@ -62,10 +62,10 @@ strace 3
 
 
 main() - 
-<img width="412" height="630" alt="image" src="https://github.com/user-attachments/assets/0591ebca-8076-49fb-aff8-fdf7b23f4be5" />
+<p align="center"><img src="https://github.com/user-attachments/assets/0591ebca-8076-49fb-aff8-fdf7b23f4be5"/></p>
 
 main() - stat() & parts[]
-<img width="669" height="165" alt="image" src="https://github.com/user-attachments/assets/02e82224-e3ee-44d0-b829-f16adf45afe9" />
+<p align="center"><img src="https://github.com/user-attachments/assets/02e82224-e3ee-44d0-b829-f16adf45afe9"/></p>
 
 
 Ghidra main()
@@ -206,10 +206,10 @@ So...
 
 
 Ghidra - parts[]
-<img width="1033" height="689" alt="image" src="https://github.com/user-attachments/assets/0603e8dc-3f5a-4cc0-a097-6db240b0f901" />
+<p align="center"><img src="https://github.com/user-attachments/assets/0603e8dc-3f5a-4cc0-a097-6db240b0f901"/></p>
 
 Cyberchef solve
-<img width="1062" height="477" alt="image" src="https://github.com/user-attachments/assets/03c7a5c6-194a-4896-ae66-f45acdd869a5" />
+<p align="center"><img src="https://github.com/user-attachments/assets/03c7a5c6-194a-4896-ae66-f45acdd869a5"/></p>
 
 Solve proof bash & zsh
 
@@ -234,10 +234,10 @@ or run in bash:
 bash -c 'string="HTB{br34k1n9_d0wn_th3_sysc4ll5}"; d="$PWD"; for ((i=0;i<${#string};i++)); do c="${string:i:1}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber'
   ```
 
-<img width="1028" height="175" alt="image" src="https://github.com/user-attachments/assets/e490fdd9-0c44-4007-9b8d-2099e37e36a1" />
+<p align="center"><img src="https://github.com/user-attachments/assets/e490fdd9-0c44-4007-9b8d-2099e37e36a1"/></p>
 
 Folder structure
-<img width="521" height="50" alt="image" src="https://github.com/user-attachments/assets/15654d8c-2000-4a34-b1dc-d223c00ebcf5" />
+<p align="center"><img src="https://github.com/user-attachments/assets/15654d8c-2000-4a34-b1dc-d223c00ebcf5"/></p>
 
 FLAG: `HTB{br34k1n9_d0wn_th3_sysc4ll5}`
 
