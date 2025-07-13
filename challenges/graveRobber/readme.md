@@ -239,7 +239,7 @@ bash -c 'string="HTB{br34k1n9_d0wn_th3_sysc4ll5}"; d="$PWD"; for ((i=0;i<${#stri
 Folder structure
 <img width="521" height="50" alt="image" src="https://github.com/user-attachments/assets/15654d8c-2000-4a34-b1dc-d223c00ebcf5" />
 
-
+FLAG: `HTB{br34k1n9_d0wn_th3_sysc4ll5}`
 
 
 
