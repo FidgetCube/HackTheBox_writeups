@@ -41,10 +41,15 @@ Understand:
   + It loads a single 4-byte value from `parts[i]`
   + Stores it in `local_58[2*i]`
   + Inserts `'/'` after each byte at `local_58[2*i + 1]`
-  + Then uses stat `(local_58, &local_e8)` to check if the resulting path exists
+  + Then uses `stat (local_58, &local_e8)` to check if the resulting path exists
 + If any `stat()` call fails `(iVar1 != 0)`, it prints: `"We took a wrong turning!"` and exits with error code 1
 
+Parts[]
+>*(undefined4 *)(parts + (long)(int)local_ec * 4)
 
+
+So...
++ So, `parts` **is an array of 32 4-byte values**, which is the flag and likely initialized or hardcoded elsewhere in the binary
 
 
 
