@@ -1,4 +1,33 @@
+<a id="top"></a>
+<p align="center"><img src="https://github.com/user-attachments/assets/cc793c1e-9b8a-404b-9765-8eeda72fe5df"/></p>
 
+# HTB Challenge - Graverobber (Reversing - Very Easy)
+
+<details>
+  <summary>Table of Contents</summary>
+  
++ [Challenge Description](#challenge-description)
++ [Challenge Files](#challenge-files)
++ [Solution](#Solution)
+</details>
+
+## Challenge Description
+
+>We're breaking into the catacombs to find a rumoured great treasure - I hope there's no vengeful spirits down there...
+
+---
+
+[^top](#top)
+## Challenge Files
+
+[Download file link](https://)
+
+ZIP Password: hackthebox
+
+---
+
+[^top](#top)
+## Solution
 
 bash proof script
 ```
