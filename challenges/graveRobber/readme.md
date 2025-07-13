@@ -123,22 +123,28 @@ LAB_00101256:
       }  
       return uVar2;  
     }  
-    local_58[(int)(local_ec * 2)] = (char)*(undefined4 *)(parts + (long)(int)local_ec * 4);
-    local_58[(int)(local_ec * 2 + 1)] = '/';
-    iVar1 = stat(local_58,&local_e8);
-    if (iVar1 != 0) {
-      puts("We took a wrong turning!");
-      uVar2 = 1;
-      goto LAB_00101256;
-    }
-    local_ec = local_ec + 1;
-  } while( true );
+    local_58[(int)(local_ec * 2)] = (char)*(undefined4 *)(parts + (long)(int)local_ec * 4);  
+    local_58[(int)(local_ec * 2 + 1)] = '/';  
+    iVar1 = stat(local_58,&local_e8);  
+    if (iVar1 != 0) {  
+      puts("We took a wrong turning!");  
+      uVar2 = 1;  
+      goto LAB_00101256;  
+    }  
+    local_ec = local_ec + 1;  
+  } while( true );  
 }
 
 
 
 
+main() - stat() & parts[]
+<img width="669" height="165" alt="image" src="https://github.com/user-attachments/assets/02e82224-e3ee-44d0-b829-f16adf45afe9" />
 
+
+
+main() - 
+<img width="412" height="630" alt="image" src="https://github.com/user-attachments/assets/0591ebca-8076-49fb-aff8-fdf7b23f4be5" />
 
 
 
