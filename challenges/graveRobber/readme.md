@@ -31,8 +31,7 @@ ZIP Password: hackthebox
 
 bash proof script
 ```
-$export string='HTB{paste flag}'
-└──╼ $for i in `seq 0 ${#string}`; do char="${string:i:1}"; mkdir ./$char/; cd ./$char/; done
+string='HTB{br34k1n9_d0wn_th3_sysc4ll5}'; d="$PWD"; for ((i=0;i<${#string};i++)); do c="${string:i:1}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber
 ```
 
 Understand:  
