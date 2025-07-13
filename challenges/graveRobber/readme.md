@@ -35,6 +35,17 @@ $export string='HTB{paste flag}'
 └──╼ $for i in `seq 0 ${#string}`; do char="${string:i:1}"; mkdir ./$char/; cd ./$char/; done
 ```
 
+Understand:  
++ `local_ec` goes from `0` to `31` (0x1f)
++ For each index:
+  + It loads a single 4-byte value from `parts[i]`
+  + Stores it in `local_58[2*i]`
+  + Inserts `'/'` after each byte at `local_58[2*i + 1]`
+  + Then uses stat `(local_58, &local_e8)` to check if the resulting path exists
++ If any `stat()` call fails `(iVar1 != 0)`, it prints: `"We took a wrong turning!"` and exits with error code 1
+
+
+
 
 
 Application running
