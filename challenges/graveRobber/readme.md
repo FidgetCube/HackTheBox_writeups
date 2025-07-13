@@ -29,77 +29,36 @@ ZIP Password: hackthebox
 [^top](#top)
 ## Solution
 
-Proof script - check shell:
-```
-echo $SHELL
-  ```
-
-(zsh)
-```
-string='HTB{br34k1n9_d0wn_th3_sysc4ll5}'; d="$PWD"; for i in {1..${#string}}; do c="${string[i,i]}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber
-```
-
-Force bash:
-
-change shell:
-```
-chsh -s /bin/bash
-  ```
-or run in bash:
-```
-bash -c 'string="HTB{br34k1n9_d0wn_th3_sysc4ll5}"; d="$PWD"; for ((i=0;i<${#string};i++)); do c="${string:i:1}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber'
-  ```
-
-
-Cleanup script:
-```
-
-  ```
-
-Understand:  
-+ `local_ec` goes from `0` to `31` (0x1f)
-+ For each index:
-  + It loads a single 4-byte value from `parts[i]`
-  + Stores it in `local_58[2*i]`
-  + Inserts `'/'` after each byte at `local_58[2*i + 1]`
-  + Then uses `stat (local_58, &local_e8)` to check if the resulting path exists
-+ If any `stat()` call fails `(iVar1 != 0)`, it prints: `"We took a wrong turning!"` and exits with error code 1
-
-Parts[]
->*(undefined4 *)(parts + (long)(int)local_ec * 4)
-
-
-So...
-+ So, `parts` **is an array of 32 4-byte values**, which is the flag and likely initialized or hardcoded elsewhere in the binary
-
-
-
 Application running
 <img width="212" height="44" alt="image" src="https://github.com/user-attachments/assets/b052e40b-5679-4628-9131-d1996a78a5c9" />
-
-Created folder `H/`
-<img width="286" height="116" alt="image" src="https://github.com/user-attachments/assets/5d018143-dfb7-4aa2-baf3-f35b7e8c3df7" />
-
-Folder Path `H/T/`
-<img width="584" height="83" alt="image" src="https://github.com/user-attachments/assets/f3a84b6c-66e2-482e-b02e-8e83314c3ac5" />
-
-
-
-Cyberchef solve
-<img width="1062" height="477" alt="image" src="https://github.com/user-attachments/assets/03c7a5c6-194a-4896-ae66-f45acdd869a5" />
-
 
 strace 1
 <img width="717" height="185" alt="image" src="https://github.com/user-attachments/assets/3e743bbf-bb96-457c-9ea6-dcb0702b5bcd" />
 
+Created folder `H/`
+<img width="286" height="116" alt="image" src="https://github.com/user-attachments/assets/5d018143-dfb7-4aa2-baf3-f35b7e8c3df7" />
+
 strace 2
 <img width="653" height="36" alt="image" src="https://github.com/user-attachments/assets/2eca496c-a5c2-412e-a774-52d0e230de9d" />
+
+Folder Path `H/T/`
+<img width="584" height="83" alt="image" src="https://github.com/user-attachments/assets/f3a84b6c-66e2-482e-b02e-8e83314c3ac5" />
 
 strace 3
 <img width="731" height="58" alt="image" src="https://github.com/user-attachments/assets/9136ffdd-98a5-4056-9427-d3c90a76486a" />
 
-Ghidra - parts[]
-<img width="1033" height="689" alt="image" src="https://github.com/user-attachments/assets/0603e8dc-3f5a-4cc0-a097-6db240b0f901" />
+
+
+
+
+
+
+main() - 
+<img width="412" height="630" alt="image" src="https://github.com/user-attachments/assets/0591ebca-8076-49fb-aff8-fdf7b23f4be5" />
+
+main() - stat() & parts[]
+<img width="669" height="165" alt="image" src="https://github.com/user-attachments/assets/02e82224-e3ee-44d0-b829-f16adf45afe9" />
+
 
 Ghidra main()
 
@@ -208,20 +167,64 @@ LAB_00101256:
 
 
 
-main() - stat() & parts[]
-<img width="669" height="165" alt="image" src="https://github.com/user-attachments/assets/02e82224-e3ee-44d0-b829-f16adf45afe9" />
+Understand:  
++ `local_ec` goes from `0` to `31` (0x1f)
++ For each index:
+  + It loads a single 4-byte value from `parts[i]`
+  + Stores it in `local_58[2*i]`
+  + Inserts `'/'` after each byte at `local_58[2*i + 1]`
+  + Then uses `stat (local_58, &local_e8)` to check if the resulting path exists
++ If any `stat()` call fails `(iVar1 != 0)`, it prints: `"We took a wrong turning!"` and exits with error code 1
+
+Parts[]
+>*(undefined4 *)(parts + (long)(int)local_ec * 4)
+
+
+So...
++ So, `parts` **is an array of 32 4-byte values**, which is the flag and likely initialized or hardcoded elsewhere in the binary
 
 
 
-main() - 
-<img width="412" height="630" alt="image" src="https://github.com/user-attachments/assets/0591ebca-8076-49fb-aff8-fdf7b23f4be5" />
 
 
 
 
 
+
+
+
+
+
+
+
+Ghidra - parts[]
+<img width="1033" height="689" alt="image" src="https://github.com/user-attachments/assets/0603e8dc-3f5a-4cc0-a097-6db240b0f901" />
+
+Cyberchef solve
+<img width="1062" height="477" alt="image" src="https://github.com/user-attachments/assets/03c7a5c6-194a-4896-ae66-f45acdd869a5" />
 
 Solve proof bash & zsh
+
+Proof script - check shell:
+```
+echo $SHELL
+  ```
+
+(zsh)
+```
+string='HTB{br34k1n9_d0wn_th3_sysc4ll5}'; d="$PWD"; for i in {1..${#string}}; do c="${string[i,i]}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber
+```
+
+Force bash:
+
+change shell:
+```
+chsh -s /bin/bash
+  ```
+or run in bash:
+```
+bash -c 'string="HTB{br34k1n9_d0wn_th3_sysc4ll5}"; d="$PWD"; for ((i=0;i<${#string};i++)); do c="${string:i:1}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber'
+  ```
 
 <img width="1028" height="175" alt="image" src="https://github.com/user-attachments/assets/e490fdd9-0c44-4007-9b8d-2099e37e36a1" />
 
