@@ -29,10 +29,32 @@ ZIP Password: hackthebox
 [^top](#top)
 ## Solution
 
-bash proof script
+Proof script - check shell:
+```
+echo $SHELL
+  ```
+
+(zsh)
 ```
 string='HTB{br34k1n9_d0wn_th3_sysc4ll5}'; d="$PWD"; for ((i=0;i<${#string};i++)); do c="${string:i:1}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber
 ```
+
+Force bash:
+
+change shell:
+```
+chsh -s /bin/bash
+  ```
+or run in bash:
+```
+bash -c 'string="HTB{br34k1n9_d0wn_th3_sysc4ll5}"; d="$PWD"; for ((i=0;i<${#string};i++)); do c="${string:i:1}"; mkdir "$c"; cd "$c"; done; cd "$d" && ./robber'
+  ```
+
+
+Cleanup script:
+```
+
+  ```
 
 Understand:  
 + `local_ec` goes from `0` to `31` (0x1f)
