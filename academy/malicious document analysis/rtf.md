@@ -1,10 +1,18 @@
+# Malicious Document Analysis
+
+## References
++ [Didier Stevens SANS blog - RTF Analysis](https://isc.sans.edu/diary/29174)
+
+## RTF Analysis
+
+Start the analysis by using Didier Stevens RTFdump Python tool.
 
 ```
 C:\Tools\Maldoc\Office\Tools\DidierStevensSuite\rtfdump.py Project_Outline.doc
   ```
 <p align="center"><img src="https://github.com/user-attachments/assets/47653943-74d1-41d4-8b7c-f61e455a73c0"/></p>
 
-Object 4 contains object that looks like equation editor vulnerability exploit
+Object 4 contains an object that looks like equation editor vulnerability exploit, use `-O` argument to 
 
 
 View the object
