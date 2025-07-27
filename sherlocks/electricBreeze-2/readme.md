@@ -172,11 +172,7 @@ Answer: `com/versa/vnms/ui/init/WriteTestTransformer.class`
 ### QUESTION 12
 What is the name of the function that deals with authentication into the webshell?
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+See screenshots above
 
 Answer: `getinsertcode`
 
@@ -190,11 +186,7 @@ Answer: `getinsertcode`
 ### QUESTION 13
 What request parameter must be present to activate the webshell logic?
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+See screenshots above
 
 Answer: `p`
 
@@ -207,11 +199,7 @@ Answer: `p`
 ### QUESTION 14
 What is the hardcoded access password used to validate incoming webshell requests?
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+See screenshots above
 
 Answer: `5ea23db511e1ac4a806e002def3b74a1`
 
@@ -223,11 +211,7 @@ Answer: `5ea23db511e1ac4a806e002def3b74a1`
 ### QUESTION 15
 What type of encryption is used?
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+See screenshots above, the answer is contained in this string `cipher = Cipher.getInstance(\"AES/ECB/PKCS5Padding\")`
 
 Answer: `AES`
 
@@ -236,11 +220,7 @@ Answer: `AES`
 ### QUESTION 16
 What cipher mode is used to encrypt the credentials?
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+See previous answer
 
 Answer: `ecb`
 
@@ -248,11 +228,9 @@ Answer: `ecb`
 ### QUESTION 17
 What is the key?
 
-```
+The key is declared here
 
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/ed4d5f27-28f3-4efa-88ea-af9293697908"/></p>
 
 Answer: `56, 50, 97, 100, 52, 50, 99, 50, 102, 100, 101, 56, 55, 52, 99, 53, 54, 101, 101, 50, 49, 52, 48, 55, 101, 57, 48, 57, 48, 52, 97, 97`
 
@@ -260,11 +238,7 @@ Answer: `56, 50, 97, 100, 52, 50, 99, 50, 102, 100, 101, 56, 55, 52, 99, 53, 54,
 ### QUESTION 18
 What is the value of the key after decoding?
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/34fc1ac4-6d81-4477-957a-0d4a9e1ca69c"/></p>
 
 Answer: `82ad42c2fde874c56ee21407e90904aa`
 
