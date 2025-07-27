@@ -155,11 +155,13 @@ Answer: `pgrep`
 ### QUESTION 11
 The functionality for the webshell is in a different file. What is its name?
 
-```
+Still using [decompiler.com](https://www.decompiler.com) to decompile `WriteTestTransformer.class` reveals this function
 
-  ```
+<p align="center"><img src="https://github.com/user-attachments/assets/f29ed954-a154-424d-bdce-e973fd7fc7ec"/></p>
 
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+I copied this out and pasted into CyberChef to format the spaces
+
+<p align="center"><img src="https://github.com/user-attachments/assets/7e89be62-6870-475a-8d17-2c685cf6c427"/></p>
 
 Answer: `com/versa/vnms/ui/init/WriteTestTransformer.class`
 
