@@ -93,7 +93,7 @@ Answer: `pom.xml`
 ### QUESTION 6
 According to Google Translate, what language is the suspicious text?
 
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/56af3b95-fbb1-4139-9870-cc726b6c5c5b"/></p>
 
 Answer: `Chinese`
 
@@ -104,7 +104,7 @@ Answer: `Chinese`
 ### QUESTION 7
 What is the translation in English?
 
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+In the screenshot above
 
 Answer: `Check for the latest version`
 
@@ -116,7 +116,9 @@ Answer: `Check for the latest version`
 ### QUESTION 8
 According to this file, what is the application's name?
 
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+In the `pom.xml` document
+
+<p align="center"><img src="https://github.com/user-attachments/assets/09063f21-8d68-48a1-814a-4b2cf56d193b"/></p>
 
 Answer: `VersaTest`
 
@@ -127,12 +129,6 @@ Answer: `VersaTest`
 
 ### QUESTION 9
 The VersaMem web shell works by hooking Tomcat. Which file holds the functionality to accomplish this?
-
-
-
-```
-
-  ```
 
 <p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
 
