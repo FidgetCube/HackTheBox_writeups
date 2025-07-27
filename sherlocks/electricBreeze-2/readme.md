@@ -130,7 +130,9 @@ Answer: `VersaTest`
 ### QUESTION 9
 The VersaMem web shell works by hooking Tomcat. Which file holds the functionality to accomplish this?
 
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+I use [Decompiler.com](https://www.decompiler.com/) to decompile Java classes, i decompiled TestMain.class
+
+<p align="center"><img src="https://github.com/user-attachments/assets/b2acd0d5-8446-432a-8476-0d115470d7fa"/></p>
 
 Answer: `com/versa/vnms/ui/TestMain.class`
 
@@ -141,11 +143,7 @@ Answer: `com/versa/vnms/ui/TestMain.class`
 ### QUESTION 10
 There is a command that determines the PID for the hook. What is the program used in this line of code?
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+See screenshot above
 
 Answer: `pgrep`
 
