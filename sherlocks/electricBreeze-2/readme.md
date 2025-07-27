@@ -81,11 +81,7 @@ Answer: `Director_tomcat_memShell`
 ### QUESTION 5
 One of the files in this directory may give some insight into the threat actor's origin. What is the file?
 
-```
-
-  ```
-
-<p align="center"><img src="https://github.com/user-attachments/assets/xx"/></p>
+From the `tree` output above you can see the file (confirm this with strings or open it to view the contents).
 
 Answer: `pom.xml`
 
