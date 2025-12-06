@@ -25,8 +25,8 @@ Content coming soon!
 
 [^top](#top)
 ## Challenges
-+ [getLab - Linux (Very Easy)](#)
-+ [graveRobber - Reversing (Very Easy]()
++ getLab - Linux (Very Easy)
++ graveRobber - Reversing (Very Easy
 
 ---
 
